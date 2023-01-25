@@ -5,6 +5,7 @@ const category_block=document.getElementById("category_block");
 const due_date_input=document.getElementById("due_date");
 const due_date_block=document.getElementById("date_block");
 
+
 // When description input is focuses
 description_input.addEventListener("focusin",()=>{
     description_block.classList.add("color_change");
