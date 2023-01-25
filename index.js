@@ -4,6 +4,9 @@ const path=require('path');
 const port=8000;
 const views_path=path.join(__dirname,"/views");
 
+// use a middleware for the static files i.e.Css, Js and Images folders
+app.use(express.static("./assets"));
+
 // use middleware express router
 app.use("/",require("./routes/routes"));
 
