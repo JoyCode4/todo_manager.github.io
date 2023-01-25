@@ -1,3 +1,191 @@
-body{
-    background-color: rgb(91, 157, 215);
+*{
+    color: grey;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(191, 115, 232);
+    /* text-align: center; */
+}
+
+/* Main Section */
+main{
+    width: 70%;
+    background-color: #fff;
+    margin: 40px auto;
+    padding-top: 10px;
+    min-height: 450px;
+}
+
+/* Heading Tag */
+h1{
+    font-family:monospace;
+    color: grey;
+    text-align: center;
+}
+
+/* Form */
+form{
+    font-family: sans-serif;
+    color: grey;
+}
+
+/* Description block */
+hr{
+    padding: 0;
+    margin: 0;
+}
+.description_block{
+    padding: 10px 10px 10px 10px;
+    /* padding-left: 10px; */
+}
+.description_block label{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+.description_block input{
+    border: none;
+    color: grey;
+    width: 90%;
+    outline-style: none;
+}
+.description_block input:focus {
+    background-color: rgb(171, 171, 222);
+}
+
+
+/* Category-Date Block */
+.category_date_block{
+    display: flex;
+}
+
+.category_date_block div{
+    width: 49%;
+    padding-left: 10px;
+}
+
+/* Category & due date block */
+.category_block,.date_block{
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.category_block{
+    border-right: 1px solid grey;
+}
+
+.category_block label,.date_block label{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+.category_block select,.date_block input{
+    border: none;
+    width: 90%;
+    padding: 0%;
+    color: grey;
+    outline-style: none;
+}
+.category_block select:focus,.date_block input:focus{
+    background-color: rgb(171, 171, 222);
+}
+
+/* Add and deleted Button */
+.btns_block{
+    text-align: center;
+    padding: 10px;
+}
+.btns{
+    margin: 3px;
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Add btn */
+.btns_block #add_btn{
+    background-color: rgb(57, 53, 53);
+}
+.btns_block #add_btn:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+/* Delete btn */
+.btns_block #delete_btn{
+    background-color: rgb(230, 57, 57);
+}
+.btns_block #delete_btn:hover{
+    background-color: rgb(144, 36, 36);
+}
+
+/* tasks list block */
+.tasks_block li{
+    list-style: none;
+}
+.tasks{
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* justify-content: space-around; */
+}
+.tasks .task_checkbox{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 10px;
+    /* border: 2px solid black; */
+}
+.tasks .task_metadata{
+    width: 100%;
+    /* margin: 10px; */
+    /* border: 2px solid black; */
+}
+.tasks .task_metadata i,.tasks .task_metadata p{
+    margin: 3px;
+}
+.tasks .task_metadata p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tasks .task_metadata span{
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.tasks .task_category{
+    text-align: center;
+    width: 100px;
+    margin: auto 10px;
+    padding: 4px 2px;
+    background-color: rgb(82, 22, 84);
+    border-radius: 2px;
+}
+
+.tasks .task_category span{
+    color: #fff;
+}
+
+.color_change{
+    background-color: rgb(171, 171, 222);
+}
+
+
+
+

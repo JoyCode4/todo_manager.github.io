@@ -6,8 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO LIST</title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Path :  todo_list/<%=title%></h1>
+    <main>
+        <h1><b>TODO App</b></h1>
+        <form action="" method="post">
+            <hr>
+            <div id="description_block" class="description_block">
+                <label for="description">description</label>
+                <input type="text" id="description" name="description" placeholder="What do you need to do?">
+            </div>
+            <hr>
+            <div class="category_date_block">
+                <div id="category_block" class="category_block">
+                    <label for="category">category</label>
+                    <select name="category" id="category">
+                        <option value="none" selected>Choose a category</option>
+                        <option value="personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="date_block" class="date_block">
+                    <label for="due_date">due date</label>
+                    <input type="date" name="due_date" id="due_date" placeholder="dd/mm/yyyy">
+                </div>
+            </div>
+            <hr>
+            <div class="btns_block">
+                <button id="add_btn" class="btns" type="submit"><i class="fa fa-plus"></i> add task</button>
+                <button id="delete_btn" class="btns" type="delete"><i class="fa fa-trash"></i> delete tasks</button>
+            </div>
+        </form>
+        <div class="tasks_block">
+            <ul>
+                <li>
+                    <div class="tasks">
+                        <div class="task_checkbox">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="task_metadata">
+                            <p>Task 1</p>
+                            <i class="fa fa-calendar"></i>
+                            <span> 2 May, 2023 </span>
+                        </div>
+                        <div class="task_category">
+                            <span>School</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tasks">
+                        <div class="task_checkbox">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="task_metadata">
+                            <p>Task 2</p>
+                            <i class="fa fa-calendar"></i>
+                            <span> 2 May, 2023 </span>
+                        </div>
+                        <div class="task_category">
+                            <span>Personal</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 </html>
