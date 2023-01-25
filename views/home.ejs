@@ -38,25 +38,26 @@
             <hr>
             <div class="btns_block">
                 <button id="add_btn" class="btns" type="submit"><i class="fa fa-plus"></i> add task</button>
-                <button id="delete_btn" class="btns" type="delete"><i class="fa fa-trash"></i> delete tasks</button>
+                <a id="delete_btn" href="">
+                    <div id="delete_btns" ><span><i class="fa fa-trash"></i>delete tasks</span></div>
+                </a>
             </div>
         </form>
         <div class="tasks_block">
             <ul>
-
-
                 <% for(let i of todo_list){ %>
+                    <% const nameOfMonths = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"]; %> 
                     <li>
                         <div class="tasks">
                             <div class="task_checkbox">
-                                <a href="/delete-todo/?description=<%= i.description %>"><input type="checkbox"></a>
+                                <input class="checkbox" type="checkbox" value="<%= i.id %>">
                             </div>
                             <div class="task_metadata">
                                 <p><%= i.description %></p>
                                 <i class="fa fa-calendar"></i>
-                                <span><%= i.due_date %></span>
+                                <span><%= nameOfMonths[i.due_date.getMonth()]%> <%= i.due_date.getDate() %>, <%= i.due_date.getFullYear() %></span>
                             </div>
-                            <div class="task_category">
+                            <div id="i.category" class="task_category">
                                 <span><%= i.category %></span>
                             </div>
                         </div>

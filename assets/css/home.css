@@ -10,7 +10,7 @@ body{
 
 /* Main Section */
 main{
-    width: 70%;
+    width: 50%;
     background-color: #fff;
     margin: 40px auto;
     padding-top: 10px;
@@ -125,9 +125,24 @@ hr{
 
 /* Delete btn */
 .btns_block #delete_btn{
+    text-decoration: none;
+}
+.btns_block #delete_btns span{
+    padding: 10px;
+    color: #fff;
+}
+.btns_block #delete_btns{
+    display: inline-block;
+    width: 120px;
+    padding: 14px 5px 18px 5px;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+
+}
+.btns_block #delete_btns{
     background-color: rgb(230, 57, 57);
 }
-.btns_block #delete_btn:hover{
+.btns_block #delete_btns:hover{
     background-color: rgb(144, 36, 36);
 }
 
@@ -182,8 +197,33 @@ hr{
     color: #fff;
 }
 
+/* ClassList for toggling and Adding through Javascript */
 .color_change{
     background-color: rgb(171, 171, 222);
+}
+
+/* Media Query */
+
+@media (max-width: 1000px) {
+    main{
+        width: 60%;
+    }
+}
+@media (max-width: 800px) {
+    main{
+        width: 65%;
+    }
+}
+@media (max-width: 600px) {
+    main{
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    main{
+        width: 90%;
+    }
 }
 
 
