@@ -1,6 +1,7 @@
 const express=require('express');
 const db=require("./config/mongoose");
 const path=require('path');
+const hostname="0.0.0.0";
 const port=8000;
 const views_path=path.join(__dirname,"/views");
 // const TodoList=require("./models/todo_list");
@@ -89,9 +90,10 @@ app.get("/delete-todo",(req,res)=>{
 });
 
 
-app.listen(port,(err)=>{
+app.listen(port,hostname,(err)=>{
     if(err){
         console.log("Error in Express setup....");
     }
     console.log("Server is runnning on port : "+port);
+    console.log("Hostname : "+hostname);
 })
