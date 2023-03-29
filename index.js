@@ -90,7 +90,7 @@ app.get("/delete-todo",(req,res)=>{
 });
 
 
-app.listen(port,hostname,(err)=>{
+app.listen(process.env.PORT || port,hostname,(err)=>{
     if(err){
         console.log("Error in Express setup....");
     }
